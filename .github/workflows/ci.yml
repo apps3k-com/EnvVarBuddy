@@ -2,8 +2,21 @@ name: CI
 
 on:
   pull_request:
+    paths-ignore:
+      - "docs/**"
+      - "**/*.md"
   push:
     branches: [main, beta]
+    paths-ignore:
+      - "docs/**"
+      - "**/*.md"
+
+# macos-26 is intentionally GitHub-hosted: public PR code must not run on the
+# privileged self-hosted fleet. Superseded PR builds do not provide useful
+# evidence, so cancel them before they consume another macOS allocation.
+concurrency:
+  group: codingbuddy-ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build-and-test:
