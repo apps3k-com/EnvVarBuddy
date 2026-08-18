@@ -77,7 +77,7 @@ xcodebuild test -project CodingBuddy.xcodeproj -scheme CodingBuddy \
 Project scope: `codingbuddy` (apps3k-com/CodingBuddy).
 
 1. Before material work, call canonical apps3k-memory through Obot with the task context. Search local then shared: project memories first, then shared memories only when local evidence is insufficient.
-2. Store only durable, verified knowledge in en prose. Preserve project names, German domain terms, commands, IDs, domains, and source references verbatim.
+2. Store only durable, verified knowledge in English prose. Preserve project names, German domain terms, commands, IDs, domains, and source references verbatim.
 3. Every stored memory requires verified-subject-verb-claim, project-or-shared-scope, source-reference, why-it-matters; do not store status updates, transcript fragments, or a paraphrase of an existing memory.
 4. Use exactly one shared memory for cross-project facts; do not copy it into every project scope.
 5. Finish every session with either a durable store or a documented no_store outcome. A memory-service failure is recorded as memory_unavailable and never silently counted as compliance.
