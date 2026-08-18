@@ -1,0 +1,16 @@
+{
+  "events": {
+    "session_start": {
+      "requires": ["memory_search"],
+      "scope": "local-then-shared"
+    },
+    "session_stop": {
+      "requires_one_of": ["memory_store", "no_store", "memory_unavailable"]
+    }
+  },
+  "mode": "report-only",
+  "repository": "codingbuddy",
+  "schema_version": 1,
+  "source_repository": "apps3k-com/agent-platform",
+  "source_revision": "122a0052fdba0a1af80f95ac717311300443b51f"
+}
