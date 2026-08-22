@@ -30,6 +30,20 @@ git checkout -B beta && git push -u origin beta
 
 Stable releases happen by merging the release PR that release-please keeps open on `main`.
 
+## Operator flow
+
+1. Merge a reviewed change to `main` or `beta`.
+2. Merge the release-please PR for that branch.
+3. Confirm the GitHub Release and its generated notes.
+4. Test the tagged build before sharing it with the intended channel audience.
+
+CodingBuddy has no server deployment: a GitHub Release is the delivery record.
+The repository deliberately does not attach an unsigned app archive. The macOS
+CI remains GitHub-hosted because the public repository must not execute pull
+request code on the privileged self-hosted runner fleet. Documentation-only
+changes skip that expensive macOS build; a newer PR update cancels its obsolete
+in-flight build.
+
 ## Enforcement pipeline
 
 | Check | Where | What |

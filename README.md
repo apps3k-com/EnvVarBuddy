@@ -56,6 +56,7 @@ export MY_VAR="value"
 | 📘 [User Guide (EN)](https://github.com/apps3k-com/CodingBuddy/wiki/User-Guide-EN) | End-user documentation |
 | 📘 [Benutzerhandbuch (DE)](https://github.com/apps3k-com/CodingBuddy/wiki/Benutzerhandbuch-DE) | Endbenutzer-Dokumentation |
 | 🔧 [Architecture](https://github.com/apps3k-com/CodingBuddy/wiki/Architecture) | Technical deep-dive |
+| 🚀 [Releases & channels](https://github.com/apps3k-com/CodingBuddy/wiki/Releases-and-Channels) | Release, beta, and signed-build operator flow |
 | 🚩 [Feature flags](docs/FEATURE_FLAGS.md) | Alpha/beta/stable channel concept |
 
 ## Contributing
